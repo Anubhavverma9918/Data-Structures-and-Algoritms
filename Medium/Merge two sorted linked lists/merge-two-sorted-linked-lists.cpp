@@ -85,24 +85,28 @@ struct Node {
 Node* sortedMerge(Node* head1, Node* head2)  
 {  
     // code here
-    if(head1 == NULL){
-        return head2;
-    }
-    if(head2 == NULL){
-        return head1;
-    }
-    if(head1->data > head2->data){
-        swap(head1, head2);
-    }
-    Node* res = head1;
-    while(head1 != NULL && head2 != NULL){
-        Node* temp = head1;
-        while(head1 != NULL && head1->data <= head2->data){
-            temp = head1;
-            head1 = head1->next;
+    Node* t1 = head1;
+    Node* t2 = head2;
+    Node* dNode = new Node(-1);
+    Node* temp = dNode;
+    
+    while(t1 != NULL && t2 != NULL){
+        if(t1->data < t2->data){
+            temp->next = t1;
+            temp = t1;
+            t1 = t1->next;
         }
-        temp->next = head2;
-        swap(head1, head2);
+        else{
+            temp->next = t2;
+            temp = t2;
+            t2 = t2->next;
+        }
     }
-    return res;
+    if(t1){
+        temp->next = t1;
+    }
+    else{
+        temp->next = t2;
+    }
+    return dNode->next;
 }  
