@@ -11,30 +11,30 @@ class Solution{
     public:
     long long trappingWater(int arr[], int n){
         // code here
-        int left = 0;
-        int right = n-1;
+        int l = 0;
+        int r = n-1;
         int leftMax = 0;
         int rightMax = 0;
         long long res = 0;
         
-        while(left <= right){
-            if(arr[left] <= arr[right]){
-                if(arr[left] >= leftMax){
-                    leftMax = arr[left];
+        while(l <= r){
+            if(arr[l] <= arr[r]){
+                if(arr[l] >= leftMax){
+                    leftMax = arr[l];
                 }
                 else{
-                    res += leftMax - arr[left];
+                    res += leftMax - arr[l];
                 }
-                left++;
+                l++;
             }
             else{
-                if(arr[right] >= rightMax){
-                    rightMax = arr[right];
+                if(arr[r] >= rightMax){
+                    rightMax = arr[r];
                 }
                 else{
-                    res += rightMax - arr[right];
+                    res += rightMax - arr[r];
                 }
-                right--;
+                r--;
             }
         }
         return res;
