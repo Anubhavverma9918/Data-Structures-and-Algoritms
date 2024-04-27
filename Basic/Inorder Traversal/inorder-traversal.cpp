@@ -41,7 +41,7 @@ class Solution {
         fun(ans, root);
         return ans;
     }
-    void fun(vector<int>& ans, Node* root){
+    void fun(vector<int> &ans, Node* root){
         if(!root){
             return;
         }
