@@ -124,7 +124,7 @@ struct Node
 }; */
 
 //Function to return a list containing the postorder traversal of the tree.
-void fun(vector<int>& ans, Node* root){
+void fun(vector<int> &ans, Node* root){
     if(!root){
         return;
     }
@@ -139,3 +139,4 @@ vector <int> postOrder(Node* root)
   fun(ans, root);
   return ans;
 }
+
