@@ -39,6 +39,7 @@ class Solution
         // return head of reversed list
         Node* temp = head;
         Node* prev = NULL;
+        
         while(temp != NULL){
             Node* front = temp->next;
             temp->next = prev;
