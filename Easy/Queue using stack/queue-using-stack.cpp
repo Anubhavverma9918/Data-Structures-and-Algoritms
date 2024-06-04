@@ -10,13 +10,11 @@ class Queue {
 public:
 
     void enqueue(int x) {
-        
         while(!output.empty()){
             input.push(output.top());
             output.pop();
         }
         input.push(x);
-        
         while(!input.empty()){
             output.push(input.top());
             input.pop();
@@ -24,7 +22,6 @@ public:
     }
 
     int dequeue() {
-        
         int ans = output.top();
         output.pop();
         return ans;
