@@ -13,6 +13,6 @@ Output: <br></strong>6
 <strong>Output:<br></strong>5
 <strong>Explanation: <br></strong>Highest element of array a[] is 5.</span>
 </pre>
-<p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You don't need to read or print anything. Your task is to complete the function <strong>findPeakElement()&nbsp;</strong>which takes integer <strong>n</strong>, and the array <strong>a[]</strong> as the input parameters and returns the highest element of the array.</span></p>
+<p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You don't need to read or print anything. Your task is to complete the function <strong>findPeakElement()&nbsp;</strong>which takes the array <strong>a[]</strong> as the input parameter and returns the highest element of the array.</span></p>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity:&nbsp;</strong>O(log(n))<br><strong>Expected Space Complexity:&nbsp;</strong>O(1)</span></p>
 <p><span style="font-size: 18px;"><strong>Constraints:</strong><br>2 &lt;= n &lt;= 10<sup>6</sup><br>1 &lt;= a[i] &lt;= 10<sup>6</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Binary Search</code>&nbsp;<code>Algorithms</code>&nbsp;
